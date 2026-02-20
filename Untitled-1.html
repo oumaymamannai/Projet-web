@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Olivier Bleu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="logo">L'Olivier Bleu</div>
+      <div class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#histoire">Notre Histoire</a>
+        <a href="#contact">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="#reservation" class="btn">Réserver</a>
+        <a href="#rese" class="btn">lll</a>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <h1>L'Essence de la Méditerranée dans votre assiette</h1>
+        <p>
+          Une cuisine authentique aux saveurs du soleil, préparée avec passion.
+        </p>
+        <a href="#reservation" class="btn btn-lg">Réserver une table</a>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about" id="histoire">
+      <h2>Notre Histoire</h2>
+      <div class="divider"></div>
+      <p>
+        Depuis des générations, L'Olivier Bleu cultive l'art de la table
+        méditerranéenne. Nous utilisons exclusivement des produits de saison et
+        notre propre huile d'olive extra vierge pressée à froid.
+      </p>
+      <p>
+        Chaque plat est une invitation au voyage, une célébration des saveurs
+        authentiques.
+      </p>
+    </section>
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="feature">
+        <h3>🥗 Ingrédients Frais</h3>
+        <p>Sélectionnés chaque matin au marché local.</p>
+      </div>
+      <div class="feature">
+        <h3>🍳 Recettes Traditionnelles</h3>
+        <p>Le secret de nos grands-mères dans chaque bouchée.</p>
+      </div>
+      <div class="feature">
+        <h3>👥 Ambiance Chaleureuse</h3>
+        <p>Un lieu convivial pour vos moments précieux.</p>
+      </div>
+    </section>
+    <!-- RESERVATION -->
+    <section class="reservation" id="reservation">
+      <h2>Réserver une Table</h2>
+      <div class="divider"></div>
+      <form id="form">
+        <input type="text" placeholder="Nom complet" required />
+        <input type="email" placeholder="Email" required />
+        <input type="date" id="date" required />
+        <select>
+          <option>1 personne</option>
+          <option selected>2 personnes</option>
+          <option>3 personnes</option>
+          <option>4 personnes</option>
+          <option>5+</option>
+        </select>
+        <button type="submit" class="btn btn-lg">Confirmer</button>
+      </form>
+      <p class="success" id="success" hidden>
+        ✅ Réservation confirmée, à bientôt !
+      </p>
+    </section>
+    <!-- FOOTER -->
+    <footer id="contact">
+      <div style="max-width: 1000px; margin: auto">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px">
+          <div style="flex: 1">
+            <h2 style="color: #73d411">L'Olivier Bleu</h2>
+            <p>L'olivier, l'huile, la passion.</p>
+          </div>
+          <div style="flex: 1">
+            <h3 style="color: #73d411">CONTACT</h3>
+            <p>
+              bientôt aux Berges du Lac<br />+216 58 730 175<br />team@gmail.com
+            </p>
+            <h3 style="color: #73d411">HORAIRES</h3>
+            <p>Lun-Ven: 12h-23h<br />Sam-Dim: 11h-00h</p>
+          </div>
+          <div style="flex: 1">
+            <h3 style="color: #73d411">Notre Page Instagram</h3>
+            <p>Abonnez-vous</p>
+            <p>Oliver Bleu</p>
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 30px">
+          © 2026 L'Olivier Bleu
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

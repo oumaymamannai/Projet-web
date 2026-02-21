@@ -49,16 +49,55 @@
     <!-- FEATURES -->
     <section class="features">
       <div class="feature">
-        <h3>🥗 Ingrédients Frais</h3>
-        <p>Sélectionnés chaque matin au marché local.</p>
+        <article class="feature-card">
+          <div class="feature-face feature-face--front">
+            <span class="feature-badge">🥗</span>
+            <h3>Ingrédients Frais</h3>
+            <p>Sélectionnés chaque matin au marché local.</p>
+            <span class="feature-hint">Survolez pour découvrir</span>
+          </div>
+          <div class="feature-face feature-face--back">
+            <h3>Qualité Premium</h3>
+            <p>
+              Produits de saison, traçabilité locale et préparation minute pour
+              un goût authentique à chaque service.
+            </p>
+          </div>
+        </article>
       </div>
       <div class="feature">
-        <h3>🍳 Recettes Traditionnelles</h3>
-        <p>Le secret de nos grands-mères dans chaque bouchée.</p>
+        <article class="feature-card">
+          <div class="feature-face feature-face--front">
+            <span class="feature-badge">🍳</span>
+            <h3>Recettes Traditionnelles</h3>
+            <p>Le secret de nos grands-mères dans chaque bouchée.</p>
+            <span class="feature-hint">Survolez pour découvrir</span>
+          </div>
+          <div class="feature-face feature-face--back">
+            <h3>Savoir-Faire Maison</h3>
+            <p>
+              Cuisson maîtrisée, assaisonnement équilibré et dressage soigné
+              inspiré de la vraie cuisine méditerranéenne.
+            </p>
+          </div>
+        </article>
       </div>
       <div class="feature">
-        <h3>👥 Ambiance Chaleureuse</h3>
-        <p>Un lieu convivial pour vos moments précieux.</p>
+        <article class="feature-card">
+          <div class="feature-face feature-face--front">
+            <span class="feature-badge">👥</span>
+            <h3>Ambiance Chaleureuse</h3>
+            <p>Un lieu convivial pour vos moments précieux.</p>
+            <span class="feature-hint">Survolez pour découvrir</span>
+          </div>
+          <div class="feature-face feature-face--back">
+            <h3>Expérience Conviviale</h3>
+            <p>
+              Service attentionné, rythme agréable et cadre élégant pour un
+              moment raffiné en famille ou entre amis.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
     <!-- RESERVATION -->
@@ -66,16 +105,49 @@
       <h2>Réserver une Table</h2>
       <div class="divider"></div>
       <form id="form">
-        <input type="text" placeholder="Nom complet" required />
-        <input type="email" placeholder="Email" required />
-        <input type="date" id="date" required />
-        <select>
-          <option>1 personne</option>
-          <option selected>2 personnes</option>
-          <option>3 personnes</option>
-          <option>4 personnes</option>
-          <option>5+</option>
-        </select>
+        <div class="form-group">
+          <label for="full-name">Nom complet</label>
+          <input
+            type="text"
+            id="full-name"
+            name="fullName"
+            placeholder="Ex: Oumayma Mannai"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex: myriamkary3@email.com"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Nombre de personnes</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Choisir</option>
+              <option value="1">1 personne</option>
+              <option value="2">2 personnes</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes</option>
+              <option value="5+">5+</option>
+            </select>
+          </div>
+        </div>
+
         <button type="submit" class="btn btn-lg">Confirmer</button>
       </form>
       <p class="success" id="success" hidden>
@@ -84,27 +156,27 @@
     </section>
     <!-- FOOTER -->
     <footer id="contact">
-      <div style="max-width: 1000px; margin: auto">
-        <div style="display: flex; flex-wrap: wrap; gap: 20px">
-          <div style="flex: 1">
-            <h2 style="color: #73d411">L'Olivier Bleu</h2>
+      <div class="footer-wrap">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h2 class="footer-brand">L'Olivier Bleu</h2>
             <p>L'olivier, l'huile, la passion.</p>
           </div>
-          <div style="flex: 1">
-            <h3 style="color: #73d411">CONTACT</h3>
+          <div class="footer-col">
+            <h3 class="footer-title">CONTACT</h3>
             <p>
               bientôt aux Berges du Lac<br />+216 58 730 175<br />team@gmail.com
             </p>
-            <h3 style="color: #73d411">HORAIRES</h3>
+            <h3 class="footer-title">HORAIRES</h3>
             <p>Lun-Ven: 12h-23h<br />Sam-Dim: 11h-00h</p>
           </div>
-          <div style="flex: 1">
-            <h3 style="color: #73d411">Notre Page Instagram</h3>
+          <div class="footer-col">
+            <h3 class="footer-title">Notre Page Instagram</h3>
             <p>Abonnez-vous</p>
             <p>Oliver Bleu</p>
           </div>
         </div>
-        <p style="text-align: center; margin-top: 30px">
+        <p class="footer-copy">
           © 2026 L'Olivier Bleu
         </p>
       </div>
